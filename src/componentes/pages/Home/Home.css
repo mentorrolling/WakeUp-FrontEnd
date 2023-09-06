@@ -1,0 +1,11 @@
+h1 {
+   font-size: 36px;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+.home-container{
+    background-color: #f3ede1; /* Fondo crema */
+    color: #4b3832; /* Texto marrón oscuro */
+    padding: 20px;
+
+}
