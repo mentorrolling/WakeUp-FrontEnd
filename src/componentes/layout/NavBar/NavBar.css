@@ -1,0 +1,29 @@
+/* Estilos personalizados para la barra de navegación */
+.navbar {
+    background-color: #f2d3bf;
+    padding: 10px 0;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 18px;
+  }
+
+  /* Estilos para el botón de hamburguesa en pantallas pequeñas */
+  .navbar-toggler-icon {
+    background-color: #fff;
+  }
+  .logonav{
+    height: 100px;
+    width: 150px;
+  }

@@ -1,7 +1,7 @@
 import React from "react"
 import "./Home.css"
 import { Row, Col } from "react-bootstrap";
-import "../../../img/001.jpg"
+import logo from "../../../assets/Screenshot_149-removebg-preview.png"
 
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
       </div>
       <div className="col m-3 col-0">
         <Row>
-          <Col> <img src="../../../img/001.jpg" alt="taza de cafe" /> </Col>
+          <Col> <img src={logo} alt="taza de cafe" /> </Col>
           <Col> <h4>Somos una empresa de cafe gourmet Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, doloribus commodi molestias fuga cum illo vero, suscipit explicabo harum iste corporis deleniti similique voluptatum dicta ullam vitae, excepturi nostrum et.</h4>
          </Col>
         </Row>
