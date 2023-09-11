@@ -24,6 +24,51 @@
     background-color: #fff;
   }
   .logonav{
-    height: 100px;
-    width: 150px;
+    height: 80px;
+    width: 100px;
   }
+  .nav-link-hover:hover {
+    background-color: #e2bdbdd5; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+    
+  }
+  .nav-link-hover {
+    /* Establece el color de fondo y el color del texto inicial */
+    background-color: transparent;
+    color: #333; /* Color de texto original */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Cambia la duración y la función de temporización */
+   }
+
+   .registrarse {
+    background-color: #8A5F4D; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño del texto */
+  
+
+  }
+  
+  .registrarse:hover {
+    background-color: #545850; /* Color de fondo al pasar el cursor sobre el botón */
+  }
+  /* Estilos del botón de enlace */
+.link-button {
+  
+  color: #000000; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Quita el borde del botón */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  text-decoration: none; /* Quita la subraya del enlace */
+  display: inline-block; /* Hace que el enlace se comporte como un bloque en línea */
+  font-size: 16px; /* Tamaño del texto */
+  text-align: right;
+}
+
+.link-button:hover {
+  background-color: #C18166; /* Color de fondo al pasar el cursor sobre el botón */
+}
+
