@@ -26,19 +26,19 @@ function Home() {
       </div>
       <br />
       <div className="empresa">
-      <Row>
-        <Col md={6}>
-        <img className="imgempresa" src={empresa} alt="empresa" />
-        </Col>
-        <Col md={6}>
-          <h3>Nuestra historia</h3>
-         <h5>
+        <Row>
+          <Col md={6}>
+            <img className="imgempresa" src={empresa} alt="empresa" />
+         </Col>
+         <Col md={6}>
+            <h3>Nuestra historia</h3>
+            <h5>
          En el año 1980, nacía oficialmente nuestra empresa de café. Comenzamos con un modesto local, donde cada taza de café se preparaba con cuidado y amor. Nuestra misión era simple pero poderosa: servir la mejor taza de café que nuestros clientes hubieran probado jamás.
          <br />
          Hoy, WakeUp!  se enorgullece de seguir sirviendo tazas de café excepcionales. Nuestro legado continúa, y cada día es una oportunidad para compartir la pasión por el café con más personas, inspirando momentos especiales y creando recuerdos que perdurarán.
-         </h5>
+          </h5>
         </Col>
-      </Row>
+       </Row>
       </div>
       <br />
       <br />
@@ -63,63 +63,68 @@ function Home() {
              No es fácil recordar una taza de té, pero la sensación y el regusto
              del primer sorbo del té de WakeUp! permanecerán durante mucho tiempo. La satisfacción que se esparce suavemente en tu corazón junto con las bebidas en WakeUp!.</h5>
            </Col>
-          <Col md={4} ><img className="techai" src={horadelte} alt="te chai" /></Col>
+          <Col md={4} >
+            <img className="techai" src={horadelte} alt="te chai" />
+          </Col>
         </Row>
       </div>
       <br />
       <div className="menu-color">
       <Row>
-          <Col><h2 className="text-center">Menu</h2></Col>
+         <Col>
+          <h2 className="text-center">Menu</h2>
+        </Col>
       </Row>
       <br />
       <div className="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-around colordelcuerpo">
       
         <Card className="colorcard" style={{ width: '18rem' }}>
-         <Card.Body className="color">
-          <CardImg src={fotocard1} className="card-img-top"/>
-           <Card.Title className="txtcol">Black Coffee</Card.Title>
-           <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-           <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-          </Card.Text>
-          <Button className="ordernow">Order Now</Button>
-        </Card.Body>
+          <Card.Body className="color">
+            <CardImg src={fotocard1} className="card-img-top"/>
+              <Card.Title className="txtcol">Black Coffee</Card.Title>
+               <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
+                <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
+              </Card.Text>
+            <Button className="ordernow">Order Now</Button>
+          </Card.Body>
        </Card>
       
        <Card className="colorcard" style={{ width: '18rem' }}>
          <Card.Body className="color">
           <CardImg src={fotocard1} className="card-img-top"/>
-           <Card.Title className="txtcol">Black Coffee</Card.Title>
-           <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-           <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-          </Card.Text>
+            <Card.Title className="txtcol">Black Coffee</Card.Title>
+             <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
+             <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
+            </Card.Text>
           <Button className="ordernow">Order Now</Button>
         </Card.Body>
        </Card>
        <Card className="colorcard" style={{ width: '18rem' }}>
          <Card.Body className="color">
-          <CardImg src={fotocard1} className="card-img-top"/>
-           <Card.Title className="txtcol">Black Coffee</Card.Title>
-           <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-           <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-          </Card.Text>
+           <CardImg src={fotocard1} className="card-img-top"/>
+             <Card.Title className="txtcol">Black Coffee</Card.Title>
+             <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
+             <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
+            </Card.Text>
           <Button className="ordernow">Order Now</Button>
-        </Card.Body>
+         </Card.Body>
        </Card>
 
        <Card className="colorcard" style={{ width: '18rem' }}>
          <Card.Body className="color">
           <CardImg src={fotocard1} className="card-img-top"/>
-           <Card.Title className="txtcol">Black Coffee</Card.Title>
-           <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-           <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-          </Card.Text>
-          <Button className="ordernow">Order Now</Button>
-        </Card.Body>
+            <Card.Title className="txtcol">Black Coffee</Card.Title>
+            <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
+            <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
+            </Card.Text>
+           <Button className="ordernow">Order Now</Button>
+         </Card.Body>
        </Card>
-      <Row><Button className="vermas"><a href="/Menu">Ver mas</a></Button></Row>
+      <Row>
+        <Button className="vermas"><a href="/Menu">Ver mas</a></Button>
+      </Row>
       </div>
      </div>
-
     </div>
   )
 }
