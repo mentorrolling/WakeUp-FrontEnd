@@ -83,13 +83,7 @@ const Menu = () => {
        <div className='img'>
          
        </div>
-       <div className='descripcion'>
-          <h5>cafe</h5>   
-          <p>cafe compuesto 50% de granos de cafe</p>       
-       </div>
-       <div className='precio'>
-        price
-       </div>
+     
    </div>
 
    
