@@ -29,27 +29,27 @@ function Navbar() {
       <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
-            <a className="nav-link" href="/Home">Home</a>
+            <a className="nav-link nav-link-hover" href="/Home">Home</a>
           </li>
           <li className="nav-item">
             <a className="nav-link nav-link-hover" href="/menu">Menú</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link nav-link-hover" href="/ubicacion">Ubicación</a>
+            <a className="nav-link nav-link-hover" href="/ubicacion">Location</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link nav-link-hover" href="/contacto">Contacto</a>
+            <a className="nav-link nav-link-hover" href="/contacto">Contact</a>
           </li>
-          <li> <Link to="/login" className="link-button">
-            Sing In
-         </Link></li>
-          <li>
-            <Button className='registrarse'>Sing Un</Button>
-          </li>
-          
+         
         </ul>
-
       </div>
+       <ul> <Link to="/login" className="link-button">
+            Sing In
+         </Link>
+        </ul>
+         <ul>
+            <Button className='registrarse'>Sing Un</Button>
+        </ul>
     </nav>
   );
 }

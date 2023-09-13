@@ -4,7 +4,6 @@ import "react-tabs"
 import { Row, Col } from 'react-bootstrap';
 import "./Menu.css"
 
-
 const Menu = () => {
   
   const menuItems = [
@@ -92,6 +91,9 @@ const Menu = () => {
         price
        </div>
    </div>
+
+   
+
     </div>
    
   );
