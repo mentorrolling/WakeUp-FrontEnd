@@ -1,63 +1,59 @@
 /* Estilos personalizados para la barra de navegación */
 .navbar {
-    background-color: #f2d3bf;
-    padding: 10px 0;
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: 2px;
-  }
-  
-  .navbar-nav .nav-item {
-    margin-right: 15px;
-  }
-  
-  .navbar-nav .nav-link {
-    color: #000000;
-    font-size: 18px;
-  }
+  background-color: #f2d3bf;
+  padding: 10px 0;
+}
 
-  /* Estilos para el botón de hamburguesa en pantallas pequeñas */
-  .navbar-toggler-icon {
-    background-color: #fff;
-  }
-  .logonav{
-    height: 80px;
-    width: 100px;
-  }
-  .nav-link-hover:hover {
-    background-color: #e2bdbdd5; /* Cambia el color de fondo al pasar el mouse */
-    color: #fff; /* Cambia el color del texto al pasar el mouse */
-    
-  }
-  .nav-link-hover {
-    /* Establece el color de fondo y el color del texto inicial */
-    background-color: transparent;
-    color: #333; /* Color de texto original */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Cambia la duración y la función de temporización */
-   }
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
-   .registrarse {
-    background-color: #8A5F4D; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Quita el borde del botón */
-    border-radius: 5px; /* Borde redondeado */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    font-size: 16px; /* Tamaño del texto */
-    margin-right: 20px;
-  
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
 
-  }
-  
-  .registrarse:hover {
-    background-color: #545850; /* Color de fondo al pasar el cursor sobre el botón */
-  }
-  /* Estilos del botón de enlace */
+.navbar-nav .nav-link {
+  color: #000000;
+  font-size: 18px;
+}
+
+/* Estilos para el botón de hamburguesa en pantallas pequeñas */
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+.logonav {
+  height: 80px;
+  width: 100px;
+}
+.nav-link-hover:hover {
+  background-color: #e2bdbdd5; /* Cambia el color de fondo al pasar el mouse */
+  color: #fff; /* Cambia el color del texto al pasar el mouse */
+}
+.nav-link-hover {
+  /* Establece el color de fondo y el color del texto inicial */
+  background-color: transparent;
+  color: #333; /* Color de texto original */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Cambia la duración y la función de temporización */
+}
+
+.registrarse {
+  background-color: #8a5f4d; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Quita el borde del botón */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  font-size: 16px; /* Tamaño del texto */
+  margin-right: 20px;
+}
+
+.registrarse:hover {
+  background-color: #545850; /* Color de fondo al pasar el cursor sobre el botón */
+}
+/* Estilos del botón de enlace */
 .link-button {
-  
   color: #000000; /* Color del texto del botón */
   padding: 10px 20px; /* Espaciado interno del botón */
   border: none; /* Quita el borde del botón */
@@ -70,6 +66,5 @@
 }
 
 .link-button:hover {
-  background-color: #C18166; /* Color de fondo al pasar el cursor sobre el botón */
+  background-color: #c18166; /* Color de fondo al pasar el cursor sobre el botón */
 }
-

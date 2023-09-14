@@ -1,5 +1,4 @@
-import React from 'react';
-import { Tabs, Tab, Card, CardBody, Button } from '@nextui-org/react';
+import { Tabs, Tab, Card, CardBody } from '@nextui-org/react';
 import "react-tabs"
 import { Row, Col } from 'react-bootstrap';
 import "./Menu.css"
