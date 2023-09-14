@@ -5,12 +5,12 @@ import { Row, Col } from 'react-bootstrap';
 import "./Menu.css"
 
 const Menu = () => {
-  
+
   const menuItems = [
     {
       category: 'Iced Drink',
       items: [
-        { name: 'Iced Latte', price:  '$3.99' },
+        { name: 'Iced Latte', price: '$3.99' },
         { name: 'Cold Brew', price: '$4.49' },
         { name: 'Iced Coffee', price: '$4.49' },
         { name: 'Iced Tea', price: '$4.49' },
@@ -38,58 +38,58 @@ const Menu = () => {
         { name: 'Lemon Pie', price: '$2.49' },
         { name: 'Pancakes', price: '$2.49' },
         { name: 'Brownie', price: '$2.49' },
-    
+
       ],
     },
   ];
 
-  
+
 
   return (
     <div>
-       <div>
-      <Row>
-        <Col className='line-container'>
-          <hr className='uno' />
-          <h2 className='text-center titlemenu'>Menú</h2>
-          <hr className='dos' />
-        </Col>
-      </Row>
+      <div>
+        <Row>
+          <Col className='line-container'>
+            <hr className='uno' />
+            <h2 className='text-center titlemenu'>Menú</h2>
+            <hr className='dos' />
+          </Col>
+        </Row>
 
-      <div className="flex w-full flex-col">
-        <Tabs aria-label="Options">
-          {menuItems.map((category, index) => (
-            <Tab key={index} title={category.category}>
-              <Card>
-                <CardBody>
-                  <h2>{category.category}</h2>
-                  <ul>
-                    {category.items.map((item, itemIndex) => (
-                      <li key={itemIndex}>
-                        <span>   {item.name}      </span>
-                        <span>  {item.price}     </span>
-                      </li>
-                    ))}
-                  </ul>
-                </CardBody>
-              </Card>
-            </Tab>
-          ))}
-        </Tabs>
+        <div className="flex w-full flex-col">
+          <Tabs aria-label="Options">
+            {menuItems.map((category, index) => (
+              <Tab key={index} title={category.category}>
+                <Card>
+                  <CardBody>
+                    <h2>{category.category}</h2>
+                    <ul>
+                      {category.items.map((item, itemIndex) => (
+                        <li key={itemIndex}>
+                          <span>   {item.name}      </span>
+                          <span>  {item.price}     </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardBody>
+                </Card>
+              </Tab>
+            ))}
+          </Tabs>
+        </div>
       </div>
+
+      <div className='boxmax'>
+        <div className='img'>
+
+        </div>
+
+      </div>
+
+
+
     </div>
 
-    <div className='boxmax'>
-       <div className='img'>
-         
-       </div>
-     
-   </div>
-
-   
-
-    </div>
-   
   );
 };
 
