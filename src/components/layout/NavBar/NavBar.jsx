@@ -1,4 +1,3 @@
-import React from 'react';
 import 'react-bootstrap';
 import "bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,22 +9,22 @@ import { Link } from 'react-router-dom';
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg text-center">
-        <img  className= "logonav" src={logo} alt="logo" />
+      <img className="logonav" src={logo} alt="logo" />
       <a className="navbar-brand" href="/"></a>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <button
-    className="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNav"
-    aria-controls="navbarNav"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span className="navbar-toggler-icon"></span>
-  </button>
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
       <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item active">
@@ -40,16 +39,16 @@ function Navbar() {
           <li className="nav-item">
             <a className="nav-link nav-link-hover" href="/contacto">Contact</a>
           </li>
-         
+
         </ul>
       </div>
-       <ul> <Link to="/login" className="link-button">
-            Sing In
-         </Link>
-        </ul>
-         <ul>
-            <Button className='registrarse'>Sing Un</Button>
-        </ul>
+      <ul> <Link to="/login" className="link-button">
+        Sing In
+      </Link>
+      </ul>
+      <ul>
+        <Button className='registrarse'>Sing Up</Button>
+      </ul>
     </nav>
   );
 }
