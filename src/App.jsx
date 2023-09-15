@@ -8,27 +8,25 @@ import Error404 from "./components/pages/Error404/Error404";
 import Menu from "./components/pages/Menu/Menu";
 import Dashboard from "./components/pages/AdminDashboard/Dashboard";
 
-
 function App() {
-  const isDashboardRoute = window.location.pathname === "/dashboard";
+  const isDashboardRoute = window.location.pathname.startsWith("/dashboard");
 
   return (
     <>
       <BrowserRouter>
-        {!isDashboardRoute && <Navbar />}
+        {isDashboardRoute ? null : <Navbar />}
         <Routes>
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/product/orders" element={<Orders />} />
           <Route exact path="/*" element={<Error404 />} />
           <Route exact path="/menu" element={<Menu />} />
-          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard/*" element={<Dashboard />} />
         </Routes>
-        {!isDashboardRoute && <Footer />}
-
-        {isDashboardRoute && <Outlet />}
+        {isDashboardRoute ? <Outlet /> : <Footer />}
       </BrowserRouter>
     </>
   )
 }
 
-export default App
+export default App;
+
