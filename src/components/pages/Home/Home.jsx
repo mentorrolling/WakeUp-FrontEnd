@@ -1,4 +1,4 @@
-import { Row, Col, Button, Card, CardImg } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import logo from "../../../assets/Screenshot_149-removebg-preview.png"
 import horadelte from '../../../assets/Té negro para todos los días.jpg'
 import empresa from "../../../assets/empresa.jpg"
