@@ -1,17 +1,16 @@
-
-import React from 'react';
+import './NavBar.css'
+import logoNav from "../../../assets/Screenshot_149-removebg-preview.png";
+import { AiOutlineUserAdd, AiOutlineUser } from 'react-icons/ai'
 
 const Navbar = () => {
 
   const handleButtonClick = () => {
-    
+
   };
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="/home">
-          Navbar
-        </a>
+    <nav className="navbar navbar-expand-lg">
+      <div className="container">
+        <a className="navbar-brand" href="/home"><img className='logoNav' src={logoNav} alt="Logo" />WakeUp!</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,42 +22,38 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0  ">
-            <li className="nav-item">
+        <div className="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
+          <ul className="navbar-nav mx-auto text-center">
+            <li className="nav-item mx-3 listNav">
               <a className="nav-link active" aria-current="page" href="/home">
                 Home
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" href="/menu">
+            <li className="nav-item listNav">
+              <a className="nav-link active mx-4" href="/menu">
                 Menu
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" href="#">
+            <li className="nav-item listNav">
+              <a className="nav-link active mx-4" href="#">
                 About us
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link active" href="#">
-                Location
+            <li className="nav-item listNav">
+              <a className="nav-link active mx-4" href="#">
+                Contact
               </a>
             </li>
           </ul>
-          <form className="d-flex">
-            
-            <button className="btn btn-outline-success mx-2" type="submit" onClick={handleButtonClick}>
-              Sing In  
-            </button>
-            <button className="btn btn-outline-success " type="submit" onClick={handleButtonClick}>
-              Sing Up
-            </button>
-          </form>
+          <div className="d-flex justify-content-center align-items-center">
+            <button className="btn btn-outline mx-2 singIn" type="button" onClick={handleButtonClick}><AiOutlineUser /> Sing In</button>
+            <button className="btn btn-outline singUp" type="button" onClick={handleButtonClick}><AiOutlineUserAdd /> Sign Up</button>
+          </div>
         </div>
       </div>
     </nav>
   );
 };
+
 
 export default Navbar;
