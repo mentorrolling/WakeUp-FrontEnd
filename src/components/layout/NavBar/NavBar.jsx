@@ -1,56 +1,64 @@
-import 'react-bootstrap';
-import "bootstrap"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './Navbar.css';
-import logo from "../../../assets/Screenshot_149-removebg-preview.png";
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
-function Navbar() {
+import React from 'react';
+
+const Navbar = () => {
+
+  const handleButtonClick = () => {
+    
+  };
   return (
-    <nav className="navbar navbar-expand-lg text-center">
-      <img className="logonav" src={logo} alt="logo" />
-      <a className="navbar-brand" href="/"></a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item active">
-            <a className="nav-link nav-link-hover" href="/Home">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link nav-link-hover" href="/menu">Menú</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link nav-link-hover" href="/ubicacion">Location</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link nav-link-hover" href="/contacto">Contact</a>
-          </li>
-
-        </ul>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/home">
+          Navbar
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0  ">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/home">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" href="/menu">
+                Menu
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" href="#">
+                About us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" href="#">
+                Location
+              </a>
+            </li>
+          </ul>
+          <form className="d-flex">
+            
+            <button className="btn btn-outline-success mx-2" type="submit" onClick={handleButtonClick}>
+              Sing In  
+            </button>
+            <button className="btn btn-outline-success " type="submit" onClick={handleButtonClick}>
+              Sing Up
+            </button>
+          </form>
+        </div>
       </div>
-      <ul> <Link to="/login" className="link-button">
-        Sing In
-      </Link>
-      </ul>
-      <ul>
-        <Button className='registrarse'>Sing Up</Button>
-      </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
