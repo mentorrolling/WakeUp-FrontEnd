@@ -5,6 +5,7 @@ import logo from "../../../assets/Screenshot_149-removebg-preview.png"
 import horadelte from '../../../assets/Té negro para todos los días.jpg'
 import empresa from "../../../assets/empresa.jpg"
 import juice from "../../../assets/Springtime_lemonade_flavors-removebg-preview.png"
+import 
 
 
 function Home() {
@@ -84,53 +85,102 @@ function Home() {
           </Col>
         </Row>
         <br />
-        <div className="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-around colordelcuerpo">
-
-          <Card className="colorcard" style={{ width: '18rem' }}>
-            <Card.Body className="color">
-              <CardImg src={fotocard1} className="card-img-top " />
-              <Card.Title className="txtcol">Black Coffee</Card.Title>
-              <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-              <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-              </Card.Text>
-              <Button className="ordernow">Order Now</Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="colorcard" style={{ width: '18rem' }}>
-            <Card.Body className="color">
-              <CardImg src={fotocard1} className="card-img-top" />
-              <Card.Title className="txtcol">Black Coffee</Card.Title>
-              <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-              <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-              </Card.Text>
-              <Button className="ordernow">Order Now</Button>
-            </Card.Body>
-          </Card>
-          <Card className="colorcard" style={{ width: '18rem' }}>
-            <Card.Body className="color">
-              <CardImg src={fotocard1} className="card-img-top" />
-              <Card.Title className="txtcol">Black Coffee</Card.Title>
-              <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-              <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-              </Card.Text>
-              <Button className="ordernow">Order Now</Button>
-            </Card.Body>
-          </Card>
-
-          <Card className="colorcard" style={{ width: '18rem' }}>
-            <Card.Body className="color">
-              <CardImg src={fotocard1} className="card-img-top" />
-              <Card.Title className="txtcol">Black Coffee</Card.Title>
-              <Card.Subtitle className="pricecard" mb="2" text="muted">$800 </Card.Subtitle>
-              <Card.Text className="text-center edit">  Some quick example text to build on the card title and make up the bulk of the card content.
-              </Card.Text>
-              <Button className="ordernow">Order Now</Button>
-            </Card.Body>
-          </Card>
-
-          <a href="/Menu" className="custonlink btn btn-sm vermas">See more</a>
+        <div className="container mt-5">
+      <Row>
+        <Col md={3}>
+      <div className="card">
+        <img src={greentea} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Green Tea</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
         </div>
+      </div>
+      </Col>
+      <Col md={3}>
+      <div className="card">
+        <img src={macchiato} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Macchiato</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+      </div>
+      </Col>
+      <Col md={3}>
+      <div className="card">
+        <img src={capuccino} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Capuccino</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+      </div>
+      </Col>
+      <Col md={3}>
+      <div className="card">
+        <img src={hotchocolate} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Hot chocolate</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+         </div>
+       </Col>
+      </Row>
+      <br />
+      <Row>
+        <Col md={3}>
+      <div className="card">
+        <img src={greentea} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Green Tea</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+      </div>
+      </Col>
+      <Col md={3}>
+      <div className="card">
+        <img src={macchiato} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Macchiato</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+      </div>
+      </Col>
+      <Col md={3}>
+      <div className="card">
+        <img src={capuccino} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Capuccino</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+      </div>
+      </Col>
+      <Col md={3}>
+      <div className="card">
+        <img src={hotchocolate} className="card-img-top" alt="Imagen del producto" />
+          <div className="card-body">
+          <h5 className="card-title">Hot chocolate</h5>
+          <p className="card-text">Descripción breve del producto. Puede incluir información relevante.</p>
+          <p className="card-price">$9.99</p>
+          <a href="#" className="btn btn-primary">+ Add</a>
+        </div>
+         </div>
+       </Col>
+      </Row>
+      <br />
+    </div>
       </div>
     </div>
   )
