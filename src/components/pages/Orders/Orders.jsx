@@ -1,14 +1,13 @@
 import { Button, Col, Row } from "react-bootstrap";
 import "./Orders.css"
 import { Link } from "react-router-dom";
-import Navbar from "../../layout/NavBar/NavBar";
 import zorro from "../../../assets/Screenshot_158-removebg-preview.png"
 
 
 const Orders = () => {
   return (
     <div>
-      <Navbar />
+  
       <Row>
         <Col md={12} className="text-center">
           <br />

@@ -2,7 +2,6 @@
 import "./Home.css"
 import { Row, Col, Button, Card, CardImg } from "react-bootstrap";
 import logo from "../../../assets/Screenshot_149-removebg-preview.png"
-import fotocard1 from "../../../assets/how-to-make-a-macchiato-003s.webp"
 import horadelte from '../../../assets/Té negro para todos los días.jpg'
 import empresa from "../../../assets/empresa.jpg"
 import juice from "../../../assets/Springtime_lemonade_flavors-removebg-preview.png"
@@ -63,20 +62,20 @@ function Home() {
         </Row>
       </div>
       <div className="contenedorte">
-        <Row className="horadelte">
-          <Col md={8} >
-            <h2 className="t">It’s time for Tea.</h2>
-            <h5 className="txtht">Todo el mundo tiene una taza de buen té en el corazón.
-              Una tarde tranquila, la temperatura del sol brillando y la suave brisa,
-              la risa de un amante y la dulzura permaneciendo en tu boca.
-              No es fácil recordar una taza de té, pero la sensación y el regusto
-              del primer sorbo del té de WakeUp! permanecerán durante mucho tiempo. La satisfacción que se esparce suavemente en tu corazón junto con las bebidas en WakeUp!.</h5>
-          </Col>
-          <Col md={4} xs={12} >
-            <img className="techai img.fluid" src={horadelte} alt="te chai" />
-          </Col>
-        </Row>
-      </div>
+      <Row className="horadelte">
+        <Col md={8}>
+          <h2 className="t">It’s time for Tea.</h2>
+          <h5 className="txtht">Todo el mundo tiene una taza de buen té en el corazón.
+            Una tarde tranquila, la temperatura del sol brillando y la suave brisa,
+            la risa de un amante y la dulzura permaneciendo en tu boca.
+            No es fácil recordar una taza de té, pero la sensación y el regusto
+            del primer sorbo del té de WakeUp! permanecerán durante mucho tiempo. La satisfacción que se esparce suavemente en tu corazón junto con las bebidas en WakeUp!.</h5>
+        </Col>
+        <Col md={4} xs={12}>
+          <img className="techai img-fluid  hidden-xs hidden-sm justify-content-center" src={horadelte} alt="te chai" />
+        </Col>
+      </Row>
+    </div>
       <br />
       <div className="menu-color">
         <Row>
