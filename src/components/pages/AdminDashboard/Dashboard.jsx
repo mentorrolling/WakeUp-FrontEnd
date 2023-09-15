@@ -10,14 +10,12 @@ const Dashboard = () => {
   return (
     <div className="d-flex" id="wrapper">
       <Sidebar />
-      <div id="page-content-wrapper">
         <Header />
         <Routes>
           <Route path="/dashboard/users" element={<UsersTable />} />
           <Route path="/dashboard/menus" element={<MenusTable />} />
           <Route path="/dashboard/orders" element={<OrdersTable />} />
         </Routes>
-      </div>
     </div>
   );
 };

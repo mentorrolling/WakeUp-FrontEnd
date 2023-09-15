@@ -3,8 +3,6 @@
 const OrdersTable = () => {
   return (
     <div>
-
-
       <div className="row my-5">
         <h3 className="fs-4 mb-3">Recent Orders</h3>
         <div className="col">
