@@ -1,11 +1,13 @@
-
-import "./Home.css"
 import { Row, Col, Button, Card, CardImg } from "react-bootstrap";
 import logo from "../../../assets/Screenshot_149-removebg-preview.png"
 import horadelte from '../../../assets/Té negro para todos los días.jpg'
 import empresa from "../../../assets/empresa.jpg"
 import juice from "../../../assets/Springtime_lemonade_flavors-removebg-preview.png"
-import 
+import greentea from "../../../assets/Diseño sin título (8).png"
+import macchiato from "../../../assets/Diseño sin título (9).png"
+import capuccino from "../../../assets/Diseño sin título (10).png"
+import hotchocolate from "../../../assets/Diseño sin título (11).png"
+import "./Home.css"
 
 
 function Home() {
