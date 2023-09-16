@@ -4,6 +4,7 @@ h1 {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: justify;
+  font-family:'Times New Roman', Times, serif;
 }
 
 h3 {
@@ -19,140 +20,61 @@ h3 {
 }
 
 .principal {
-  background-image: url("../../../assets/principal.png");
-  background-size: cover;
+  background-image: url("../../../assets/fondomarron.png");
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  padding: 20px;
-  min-width: 550px;
-  min-height: 550px;
+  background-position: center center;
+  padding: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
+
 
 /*empresa*/
 
 .empresa {
-  border-radius: 4%;
-  height: 250px;
-  padding-left: 40px;
-  margin-bottom: 150px;
-  margin-top: 50px;
+ background-color: #4b3832;
+ color: white;
+ padding: 5%;
+
+}
+.ourHistory{
+  color: white;
+  padding-bottom: 25%;
+  text-align: center;
+  
+}
+.linea{
+  border: none;
+  height: 1px; 
+  background-color: #ffffff; 
+  
 }
 .imgempresa {
   border-radius: 20px;
-  /* max-width: '100%';
-    height: 'auto';  
-    display: 'block'; 
-    margin: '0 auto'; */
+  
 }
 
 /*juice*/
-.juiceserie {
-  background-color: #f2d3bf;
-  min-height: 100vh;
-  background-size: cover;
-  display: flex; /* Aplicamos flexbox para alinear elementos verticalmente */
-  justify-content: center; /* Centramos horizontalmente */
-  align-items: center; /* Centramos verticalmente */
-  text-align: center; /* Alineamos el texto al centro */
-}
-.txtjuice {
-  margin-top: 150px;
+.juice{
+  width: 100%;
+  height: 90%;
 }
 
 /* contenedor te */
-.horadelte {
-  background-color: #f0b294;
-  min-height: 600px;
-}
-.techai {
-  border-radius: 50%;
-  height: 20rem;
-  width: 20rem;
-  border-style: solid;
-  margin-top: 150px;
-}
-.txtht {
-  text-align: center;
-  padding-left: 100px;
-  padding-right: 150px;
-  padding-top: 50px;
-  margin-top: 100px;
-}
+.tea{
+  width: 60%;
+  height: 80%;
+  border-radius: 5px;
 
-.t {
-  text-align: center;
-  padding-left: 50px;
-  padding-right: 100px;
-  margin-top: 100px;
 }
+.containertea{
+  background-color: #f2d3bf;
 
-/* menu de home*/
-
-.ordernow {
-  background-color: #e09590;
-  color: black;
-  border: none;
 }
-.ordernow:hover {
-  background-color: brown;
-}
-
-.colordelcuerpo {
-  background-color: #ffffff;
-}
-.colorcard {
-  background-color: #8a5f4d;
-}
-
-.color {
-  background-color: #8a5f4d;
-}
-.txtcol {
-  background-color: #8a5f4d;
-}
-.edit {
-  background-color: #8a5f4d;
-}
-.card-img-top {
-  max-height: 200px;
-  object-fit: cover;
-}
-.pricecard {
-  background-color: #8a5f4d;
-}
-.txt {
-  max-width: max-content;
-}
-
-.d-flex.align-items-center {
-  min-height: 100%; /* Evita que el segundo Col se encima en pantallas pequeñas */
-  text-align: center; /* Alinea el contenido verticalmente en el centro */
-}
-
-.vermas {
-  text-decoration: none;
-  color: black;
-  background-color: #e09590;
-  border: none;
-}
-.vermas:hover {
-  background-color: #4b3832;
-  color: white;
-}
-.custonlink {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-  background-color: #e09590;
-}
-
-@media (max-width: 280px) {
-  /* Estilos específicos para el Galaxy Fold */
-}
-
 
 /* Estilo para las tarjetas */
 .card {
@@ -160,6 +82,8 @@ h3 {
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
+  border: none;
+  margin-bottom: 20%;
 }
 
 .card:hover {
@@ -168,8 +92,10 @@ h3 {
 
 .card img {
   max-width: 100%;
+  max-height: 300%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  
 }
 
 .card-body {
@@ -179,6 +105,7 @@ h3 {
 .card-title {
   font-size: 1.25rem;
   font-weight: 600;
+
 }
 
 .card-text {
@@ -193,7 +120,7 @@ h3 {
 }
 
 .btn-primary {
-  background-color: #008000;
+  background-color: #4b3832;
   border: none;
 }
 
@@ -201,3 +128,7 @@ h3 {
   background-color: #8A5F4D;; /* Color más oscuro al pasar el mouse */
 }
 
+.menu-color{
+  background-color:#8A5F4D ;
+  
+}
