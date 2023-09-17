@@ -54,10 +54,10 @@ function Home() {
           <hr />
           <Col md={6} className="d-flex justify-content-center align-items-center">
             <div  className="d-flex flex-column align-items-center" >
-              <h3 className="ourHistory mb-1">Our history</h3>
-              <h6> In 1980, our coffee company was officially born. We started with a modest establishment, where each cup of coffee was prepared with care and love. Our mission was simple but powerful: serve the best cup of coffee our customers had ever tasted.
-                <br />
-                Today, WakeUp! is proud to continue serving exceptional cups of coffee. Our legacy continues, and every day is an opportunity to share the passion for coffee with more people, inspiring special moments and creating memories that will last.</h6>
+              <h3 className="ourHistory ">Our history</h3>
+              <h6>Behind every cup of coffee and every smile we offer, there is a passionate and dedicated team working tirelessly to give you the best experience possible. From our talented baristas to our friendly service staff, we all share a common commitment: making your visit to WakeUp! be exceptional.</h6>
+            <a className="btnhistory" href="">know us </a>
+              
             </div>
 
           </Col>
