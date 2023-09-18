@@ -10,17 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nextui-org/button": "^2.0.20",
-    "@nextui-org/react": "^2.1.12",
-    "@nextui-org/system": "^2.0.9",
-    "@nextui-org/theme": "^2.1.8",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
     "framer-motion": "^10.16.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.15.0",
+    "react-scroll": "^1.8.9",
     "react-tabs": "^6.0.2"
   },
   "devDependencies": {

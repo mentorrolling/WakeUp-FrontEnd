@@ -1,0 +1,30 @@
+nav {
+  background: #f2d3bf;
+  color: black
+}
+
+.logoNav {
+  width: 80px;
+  height: 65px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+}
+
+.singIn,.singUp {
+  border: 2px solid #8a5f4d;
+}
+
+.singIn:hover {
+  background-color: #8a5f4d;
+}
+
+.singUp:hover {
+  background-color: #8a5f4d;
+}
+
+.listNav:hover {
+  margin-top: 5px;
+  border-bottom: 2px solid;
+}
