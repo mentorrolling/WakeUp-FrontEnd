@@ -8,6 +8,7 @@ import Error404 from "./components/pages/Error404/Error404";
 import Menu from "./components/pages/Menu/Menu";
 import Dashboard from "./components/pages/AdminDashboard/Dashboard";
 
+
 function App() {
   const isDashboardRoute = window.location.pathname.startsWith("/dashboard");
 
