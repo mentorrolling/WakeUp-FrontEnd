@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
 import "./menu.css"
-import { Card, Button, Nav, Row, Col  } from 'react-bootstrap';
-import { Link } from 'react-scroll';
+import { Card, Button, Row, Col, Container  } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Orders from '../Orders/Orders';
+
+
+
+
 
 
 const menuItems = [
@@ -45,6 +50,11 @@ const menuItems = [
 function App() {
   const [activeCategory, setActiveCategory] = useState('Cold Drinks');
 
+  const handleAddToCart = (product) => {
+    // Clona el carrito actual y agrega el producto seleccionado
+    setCart([...cart, product]);
+  };
+  const [cart, setCart] = useState([]);
   const handleCategoryClick = (category) => {
     setActiveCategory(category);
   };
@@ -52,9 +62,9 @@ function App() {
   const filteredItems = menuItems.find((category) => category.category === activeCategory)?.items;
 
   return (
-    <div className="App">
+    <div className="App colormenu">
       <header className="App-header">
-        <h1 className='text-center my-5 mb-4'>Welcome Menu WakeUp!</h1>
+        <h1 className='text-center mb-4 textmenu'>Welcome Menu WakeUp!</h1>
         <Row>
           <Col>
              <div className=' d-flex justify-content-center '>
@@ -70,7 +80,7 @@ function App() {
                 </li>
                  ))}
                 </ul>
-          </div>
+          </div> 
           </Col>
 
         </Row>
@@ -78,28 +88,29 @@ function App() {
       </header>
       <main className='main_'>
         <section className='editsection'>
+          <Container>
           <div className='card'>
             
-            <Card className='tarjeta'>
+            <Card className='tarjeta p-5 mb-0'>
               <h2>{activeCategory}</h2>
-                <ul className="menu-list">
+                <ul className="menu-list p-3">
                   {filteredItems &&
                   filteredItems.map((item, index) => (
-                  <li key={index}>
+                  <li key={index} className='mb-4'>
                 
                 
-                <div className="item-details p-2">
+                <div className="item-details p-0 d-flex d-md-flex flex-md-row flex-column align-items-md-center">
                   <div className='item-imagen'>
-                    <img src={item.image} alt={item.name} />
+                    <img src={item.image} alt={item.name} className='img-fluid'/>
                   </div>
-                <div className='item-descripcion'>
+                <div className='item-descripcion flex-grow-1 p-3'>
                   <h3>{item.name}</h3>
                 <div className='item-price'>
                   <p>{item.price}</p>
                 </div>
                 </div>
                 <div className='item_op'>
-                  <select name="option" id="" className='select'>
+                  <select name="option" id="" className='select mt-2 m-4 '>
                     <option value="">Select an option</option>
                     <option value="option">1</option>
                     <option value="option">2</option>
@@ -107,21 +118,31 @@ function App() {
                     <option value="option">4</option>
                     <option value="option">5</option>
                   </select>
-                  <Button type="submit" className='butonorden'> + add </Button>
-                </div>
+
+                  <Button type="submit" className='butonorden  ' onClick={() => handleAddToCart(item)}> + add </Button>
+                
                   
-             
+                </div>
                 </div>
                   </li>
                   ))}
                 </ul>
             </Card> 
-          </div> 
+           
+          </div>
+          </Container>
+          <Link to="/product/orders">
+            <div className="boton-carrito">
+              <i className="fas fa-shopping-cart"> Order</i>
+              <span className="contador">{cart.length}</span>
+            </div>
+          </Link>
         </section>
-        
-        
+                 
       </main>
-    </div>
+     
+    </div> 
+    
   );
 }
 
