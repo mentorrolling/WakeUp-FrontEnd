@@ -1,8 +1,8 @@
 :root {
-  --main-bg-color: #009d63;
-  --main-text-color: #009d63;
-  --second-text-color: #bbbec5;
-  --second-bg-color: #c1efde;
+  --main-bg-color: #f2d3bf;
+  --main-text-color: #f2d3bf;
+  --second-text-color: #8a5f4d;
+  --second-bg-color: #8a5f4d;
 }
 
 .primary-text {
@@ -29,11 +29,11 @@
   overflow-x: hidden;
   background-image: linear-gradient(
     to right,
-    #baf3d7,
-    #c2f5de,
-    #cbf7e4,
-    #d4f8ea,
-    #ddfaef
+    #f2d3bf,
+    #f2d3bf,
+    #f5c5a5,
+    #f5c5a5,
+    #f2d3bf
   );
 }
 
@@ -55,9 +55,9 @@
   width: 15rem;
 }
 
-#page-content-wrapper {
+/* #page-content-wrapper {
   min-width: 100vw;
-}
+} */
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
@@ -65,6 +65,9 @@
 
 #menu-toggle {
   cursor: pointer;
+  background: #8a5f4d;
+  width: 30px;
+  height: 30px;
 }
 
 .list-group-item {
