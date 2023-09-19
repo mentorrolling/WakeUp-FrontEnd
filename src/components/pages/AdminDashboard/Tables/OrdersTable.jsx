@@ -3,7 +3,8 @@
 const OrdersTable = () => {
   return (
     <div>
-      <div className="row my-5">
+      <h1>ORDERS TABLE</h1>
+      {/* <div className="row my-5">
         <h3 className="fs-4 mb-3">Recent Orders</h3>
         <div className="col">
           <table className="table bg-white rounded shadow-sm  table-hover">
@@ -91,7 +92,7 @@ const OrdersTable = () => {
             </tbody>
           </table>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

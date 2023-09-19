@@ -43,7 +43,7 @@ const Header = () => {
                 </div>
             </nav>
 
-            <div className="container-fluid px-4">
+            {/* <div className="container-fluid px-4">
                 <div className="row g-3 my-2">
                     <div className="col-md-3">
                         <div className="p-3 bg-white shadow-sm d-flex justify-content-around align-items-center rounded">
@@ -177,7 +177,7 @@ const Header = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
         </div>
     );
 };
