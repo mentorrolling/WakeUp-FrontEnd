@@ -1,0 +1,134 @@
+.textmenu{
+  color: #f2d3bf;
+}
+ ul{
+  list-style-type: none;
+ }
+
+.btn-cust{
+  color: white;
+  width: 300px;
+  height: auto;
+  margin-left: 6px;
+
+}
+.btn-cust:hover{
+  background-color: #f2d3bf;
+
+}
+.colormenu{
+  background-color: #4b3832;
+}
+
+ /*clases nuevas*/
+
+/*
+.tarjeta{
+    display: flex;
+    padding: 1rem;
+    box-shadow: 0 2px 8px black;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    width: 90%;
+    left: 70px;
+
+  } */
+  .item-imagen{
+    min-width: 15px;
+    min-height: 150px;
+    position: relative;
+    object-fit: contain;
+  } 
+  .menu-list img {
+    max-width: 200px; 
+   
+  }
+/*
+  .item-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px black;
+    word-wrap: break-word;
+  }
+
+  .item-descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 6;
+    flex-shrink: 6;
+    margin: 0 0.5rem;
+  }
+  .item-price{
+    margin-top: 0.25rem;
+    font-weight: 800;
+    color: turquoise;
+    font-size: 1.3rem;
+  }
+  .item_op {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 5;
+    flex-shrink: 5;
+    max-width: 100%;
+}
+.select{
+    width: 10rem;
+    border-radius: 8px;
+    border: 1px solid;
+    font: inherit;
+    padding-left: 0.5rem;
+} 
+
+.butonorden{
+  font: inherit;
+  cursor: pointer;
+  background-color:rgb(192, 137, 214);
+  border: 1px solid ;
+  color: #fff;
+  padding: 0.25rem 2rem;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-left: 10px ;
+}
+/*boton carrito*/
+
+.boton-carrito {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e7e42e;
+  color: #000000;
+  border: none;
+  border-radius: 9%;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.boton-carrito i {
+  font-size: 24px;
+}
+
+.contador {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}

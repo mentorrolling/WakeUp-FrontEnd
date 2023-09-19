@@ -1,0 +1,10 @@
+.ordersfondo{
+   background-color: #C18166;
+   width: 50%;
+   border-radius: 1%;
+}
+.botonhacerpedido{
+ display: flex;
+ justify-content: center;
+ background-color: chocolate;
+}
