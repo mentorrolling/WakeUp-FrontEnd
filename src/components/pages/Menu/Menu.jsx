@@ -51,7 +51,7 @@ function App() {
   const [activeCategory, setActiveCategory] = useState('Cold Drinks');
 
   const handleAddToCart = (product) => {
-    // Clona el carrito actual y agrega el producto seleccionado
+
     setCart([...cart, product]);
   };
   const [cart, setCart] = useState([]);
@@ -119,7 +119,7 @@ function App() {
                     <option value="option">5</option>
                   </select>
 
-                  <Button type="submit" className='butonorden  ' onClick={() => handleAddToCart(item)}> + add </Button>
+                  <Button type="submit" className='butonorden' onClick={() => handleAddToCart(item)}> + add </Button>
                 
                   
                 </div>
