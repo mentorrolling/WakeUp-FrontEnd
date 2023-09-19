@@ -127,7 +127,7 @@ h3 {
 .card-price {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #008000; /* Color verde para el precio */
+  color: #008000; 
 }
 
 .btn-primary {
@@ -136,7 +136,7 @@ h3 {
 }
 
 .btn-primary:hover {
-  background-color: #8A5F4D;; /* Color más oscuro al pasar el mouse */
+  background-color: #8A5F4D; 
 }
 
 .menu-color{
