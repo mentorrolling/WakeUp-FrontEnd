@@ -134,7 +134,7 @@ const Error404 = () => {
         </div>
         <div className="text-center">
           <h2>It seems there was an error ☹ back to home!</h2>
-          <Link to="/home" className="btn-danger my-4 text-decoration-none text-center btn btn-dark">Home</Link>
+          <Link to="/" className="btn-danger my-4 text-decoration-none text-center btn btn-dark">Home</Link>
         </div>
       </div>
     </>

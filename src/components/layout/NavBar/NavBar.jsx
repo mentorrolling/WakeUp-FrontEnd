@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="collapse navbar-collapse justify-content-center align-items-center" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto text-center">
             <li className="nav-item mx-3 listNav">
-              <a className="nav-link active" aria-current="page" href="/home">
+              <a className="nav-link active" aria-current="page" href="/">
                 Home
               </a>
             </li>
