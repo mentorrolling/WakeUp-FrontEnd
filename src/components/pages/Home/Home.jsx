@@ -1,5 +1,5 @@
 import { Row, Col} from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import logo from "../../../assets/Screenshot_149-removebg-preview.png";
 import horadelte from "../../../assets/Té negro para todos los días.jpg";
 import empresa from "../../../assets/empresa.jpg";
