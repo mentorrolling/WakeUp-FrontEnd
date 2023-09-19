@@ -1,3 +1,5 @@
+
+
 const $btnSignIn= document.querySelector('.sign-in-btn'),
       $btnSignUp = document.querySelector('.sign-up-btn'),  
       $signUp = document.querySelector('.sign-up'),
@@ -12,34 +14,24 @@ document.addEventListener('click', e => {
 
 let formRegistro = document.getElementById("formRegistro")
 let formLogin = document.getElementById("formLogin")
-let registroExitoso = document.getElementById("registroExitoso")
-// let usuarios = []
+// let registroExitoso = document.getElementById("registroExitoso")
 const alertaNombre = document.getElementById("alertaNombre")
 const alertaApellido = document.getElementById("alertaApellido")
 const alertaNickname = document.getElementById("alertaNickname")
 const alertaEmail = document.getElementById("alertaEmail")
 const alertaPassword = document.getElementById("alertaPassword")
 
-// formRegistro.addEventListener("submit", (event) => {
-//     event.preventDefault();
-// })
-
-// formLogin.addEventListener("submit", (event) => {
-//     event.preventDefault();
-// })
-
 formRegistro.addEventListener("submit", (event) => {
     event.preventDefault();
 
     let nombreUsuario = document.getElementById("nombreUsuario").value;
     let apellidoUsuario = document.getElementById("apellidoUsuario").value;
-    let nicknameUsuario = document.getElementById("nicknameUsuario").value;
+    // let nicknameUsuario = document.getElementById("nicknameUsuario").value;
     let emailUsuario = document.getElementById("emailUsuario").value;
     let passUsuario = document.getElementById("passUsuario").value;
 
     alertaNombre.innerHTML = ""
     alertaApellido.innerHTML = ""
-    alertaNickname.innerHTML = ""
     alertaEmail.innerHTML = ""
     alertaPassword.innerHTML = ""
     
@@ -48,8 +40,8 @@ formRegistro.addEventListener("submit", (event) => {
     let validoEnContrasena = true
 
     let valido = true
-    let validoNick = true
-    let validoEmail = true
+    // let validoNick = true
+    // let validoEmail = true
 
     if(nombreUsuario.length === 0){
         alertaNombre.style.color = "#ff0000";
@@ -75,18 +67,6 @@ formRegistro.addEventListener("submit", (event) => {
     }else{
         alertaApellido.style.color = "#008000";
         alertaApellido.innerHTML = "Apellido/s válido/s"
-    }
-
-    if(nicknameUsuario.length === 0){
-        alertaNickname.style.color = "#ff0000";
-        alertaNickname.innerHTML = "Campo 'Nombre de usuario' no puede permanecer vacio"
-        valido = false
-        validoNick = false
-    }else if(nicknameUsuario.length < 5){
-        alertaNickname.style.color = "#ff0000";
-        alertaNickname.innerHTML = "Nombre de usuario muy corto"
-        valido = false
-        validoNick = false
     }
 
     if(emailUsuario.length === 0){
@@ -190,5 +170,132 @@ formRegistro.addEventListener("submit", (event) => {
     //     }, 5000)
 
     //     formRegistro.reset()
+    // }
+})
+
+const alertaEmailLogin = document.getElementById("alertaEmailLogin")
+const alertaPasswordLogin = document.getElementById("alertaPasswordLogin")
+
+formLogin.addEventListener("submit", (event) => {
+    event.preventDefault();
+    
+    let inicioSesion = true;
+
+    alertaEmailLogin.innerHTML = ""
+    alertaPasswordLogin.innerHTML = ""
+
+    let emailLogin = document.getElementById("emailLogin").value;
+    let passLogin = document.getElementById("passLogin").value;
+
+    if(emailLogin.length === 0){
+        inicioSesion = false;
+        alertaEmailLogin.style.color = "#ff0000";
+        alertaEmailLogin.innerHTML = "Email no ingresado"
+    }
+
+    if(passLogin.length === 0){
+        inicioSesion = false;
+        alertaPasswordLogin.style.color = "#ff0000";
+        alertaPasswordLogin.innerHTML = "Contraseña no ingresada"
+    }
+
+    if(!inicioSesion){
+        return;
+    }
+    
+    // if(usuariosRegistrados != null){
+    //     let cantidadUsuarios = usuariosRegistrados.length
+
+    //     let index = indiceEmailRegistrado(usuariosRegistrados, emailLogin, cantidadUsuarios);
+    
+    //     if(index === -1){
+    //         if(emailLogin === usuarioAdministrador["email"]){
+    //             if(passLogin === usuarioAdministrador["password"]){
+
+    //                 setTimeout(()=>{
+    //                     window.location.href = "administrador.html"
+    //                 }, 1000)
+    //             }
+    //             else{
+    //                 alertaPasswordLogin.style.color = "#ff0000";
+    //                 alertaPasswordLogin.innerHTML = "Contraseña e email no coinciden"
+    //             }
+    //         }else{
+    //             alertaEmailLogin.style.color = "#ff0000";
+    //             alertaEmailLogin.innerHTML = "Email no registrado"
+    //         }
+
+    //     }else{
+    //         if(usuariosRegistrados[index]["password"] == passLogin){
+    //             setTimeout(()=>{
+    //                 window.location.href = "paginaPrincipal.html"
+    //             }, 1000)
+    //         }else{
+    //             alertaPasswordLogin.style.color = "#ff0000";
+    //             alertaPasswordLogin.innerHTML = "Contraseña e email no coinciden"
+    //         }
+    //     }
+    // }else{
+    //     if(emailLogin === usuarioAdministrador["email"]){
+    //         if(passLogin === usuarioAdministrador["password"]){
+
+    //             setTimeout(()=>{
+    //                 window.location.href = "administrador.html"
+    //             }, 1000)
+    //         }
+    //         else{
+    //             alertaPasswordLogin.style.color = "#ff0000";
+    //             alertaPasswordLogin.innerHTML = "Contraseña o email no coinciden"
+    //         }
+    //     }else{
+    //         alertaEmailLogin.style.color = "#ff0000";
+    //         alertaEmailLogin.innerHTML = "Email no registrado"
+    //         return;
+    //     }
+    // }
+
+    // function indiceEmailRegistrado(usuariosEnBase, emailIngresadoPorUsuario, cantidadUsuariosEnBase){
+    //     let indice = -1
+    //     for(let i=0; i<cantidadUsuariosEnBase; i++){
+
+    //         if(usuariosEnBase[i]["email"] === emailIngresadoPorUsuario){
+    //             indice = i
+    //             return indice
+    //         }
+
+    //         if(i === cantidadUsuarios - 1){
+    //             return indice
+    //         }
+    //     }
+    // }
+
+    // let index = indiceEmailRegistrado(usuariosRegistrados, emailLogin, cantidadUsuarios);
+    
+    // if(index === -1){
+    //     if(emailLogin === usuarioAdministrador["email"]){
+    //         if(passLogin === usuarioAdministrador["password"]){
+
+    //             setTimeout(()=>{
+    //                 window.location.href = "administrador.html"
+    //             }, 1000)
+    //         }
+    //         else{
+    //             alertaPasswordLogin.style.color = "#ff0000";
+    //             alertaPasswordLogin.innerHTML = "Contraseña e email no coinciden"
+    //         }
+    //     }else{
+    //         alertaEmailLogin.style.color = "#ff0000";
+    //         alertaEmailLogin.innerHTML = "Email no registrado"
+    //     }
+
+    // }else{
+    //     if(usuariosRegistrados[index]["password"] == passLogin){
+    //         setTimeout(()=>{
+    //             window.location.href = "paginaPrincipal.html"
+    //         }, 1000)
+    //     }else{
+    //         alertaPasswordLogin.style.color = "#ff0000";
+    //         alertaPasswordLogin.innerHTML = "Contraseña e email no coinciden"
+    //     }
     // }
 })
