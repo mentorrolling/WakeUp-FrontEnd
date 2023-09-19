@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import "./menu.css"
+import "./Menu.css"
 import { Card, Button, Row, Col, Container  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Orders from '../Orders/Orders';
+
 
 
 
