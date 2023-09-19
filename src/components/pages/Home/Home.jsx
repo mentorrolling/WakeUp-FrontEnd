@@ -1,5 +1,5 @@
 import { Row, Col, Button } from "react-bootstrap";
-import { Link } from "react-scroll";
+import { Link } from "react";
 import logo from "../../../assets/Screenshot_149-removebg-preview.png"
 import horadelte from '../../../assets/Té negro para todos los días.jpg'
 import empresa from "../../../assets/empresa.jpg"
@@ -87,7 +87,7 @@ function Home() {
         <Row>
           <Col  className="text-center mx-auto p-5" md={6}>
             <h2 className="mb-5"> It’s time for Tea. </h2>
-            <h5>Everyone has a cup of good tea in their heart. A quiet afternoon, the temperature of the sun shining and the gentle breeze, the laughter of a lover and the sweetness lingering in your mouth. It's not easy to remember a cup of tea, but the feeling and aftertaste of the first sip of WakeUp! They will remain for a long time. The satisfaction that gently spreads in your heart along with the drinks at WakeUp!.</h5>
+            <h5>Everyone has a cup of good tea in their heart. A quiet afternoon, the temperature of the sun shining and the gentle breeze, the laughter of a lover and the sweetness lingering in your mouth. It`s not easy to remember a cup of tea, but the feeling and aftertaste of the first sip of WakeUp! They will remain for a long time. The satisfaction that gently spreads in your heart along with the drinks at WakeUp!.</h5>
           </Col>
           <Col md={6}> 
             <img className="img-fluid d-flex justify-content-center mx-auto tea mt-5" src={horadelte} alt="tea" />
